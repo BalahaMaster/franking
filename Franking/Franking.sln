@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "Franking\API.csproj", "{2280B6A7-25A6-4F09-9302-1F7EEA47730D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{5F8E0C35-13D6-4923-8EA2-88431A5B6821}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2280B6A7-25A6-4F09-9302-1F7EEA47730D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2280B6A7-25A6-4F09-9302-1F7EEA47730D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2280B6A7-25A6-4F09-9302-1F7EEA47730D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F8E0C35-13D6-4923-8EA2-88431A5B6821}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F8E0C35-13D6-4923-8EA2-88431A5B6821}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F8E0C35-13D6-4923-8EA2-88431A5B6821}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F8E0C35-13D6-4923-8EA2-88431A5B6821}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
