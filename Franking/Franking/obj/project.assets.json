@@ -12540,13 +12540,10 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "C:\\Users\\marci\\Source\\Repos\\franking\\Franking\\Franking\\Franking.csproj",
-      "projectName": "Franking",
-      "projectPath": "C:\\Users\\marci\\Source\\Repos\\franking\\Franking\\Franking\\Franking.csproj",
+      "projectUniqueName": "C:\\Users\\marci\\Source\\Repos\\franking\\Franking\\Franking\\API.csproj",
+      "projectName": "API",
+      "projectPath": "C:\\Users\\marci\\Source\\Repos\\franking\\Franking\\Franking\\API.csproj",
       "packagesPath": "C:\\Users\\marci\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\marci\\Source\\Repos\\franking\\Franking\\Franking\\obj\\",
       "projectStyle": "PackageReference",
