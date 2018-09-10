@@ -8,25 +8,10 @@ namespace Franking.Models
 {
     public class Match
     {
-        public Side Home { get; set; }
-        public Side Away { get; set; }
-        public Side Winner
-        {
-            get { return Winner; }
-            set
-            {
-                if (Home.Score == Away.Score) Winner = null;
-                else if (Home.Score > Away.Score) Winner = Home;
-                else
-                    Winner = Away;
-                    
-            }
-        }
-
-        public Match(Side homeParam, Side awayParam)
-        {
-            this.Home = homeParam;
-            this.Away = awayParam;
-        }
+        public int MatchID { get; set; }
+        public int HomePlayerID { get; set; }
+        public int AwayPlayerID { get; set; }
+        public int HomeScore { get; set; }
+        public int AwayScore { get; set; }
     }
 }
