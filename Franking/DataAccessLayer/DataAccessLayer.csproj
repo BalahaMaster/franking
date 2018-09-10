@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\RankingContext.cs" />
     <Compile Include="Models\Match.cs" />
     <Compile Include="Models\Side.cs" />
     <Compile Include="Models\Team.cs" />
@@ -62,5 +63,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
