@@ -7,6 +7,7 @@ namespace DataAccessLayer.Models
 {
     public class TeamRank
     {
+        public int Id { get; set; }
         public string Rank { get; set; }
         public double Value { get; set; }
 
