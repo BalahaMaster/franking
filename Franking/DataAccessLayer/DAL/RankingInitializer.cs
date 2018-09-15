@@ -1,4 +1,5 @@
 ﻿using DataAccessLayer.Models;
+using Franking.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,10 +14,10 @@ namespace DataAccessLayer.DAL
         {
             var users = new List<User>
             {
-                new User{Name = "Marcin Karpiesiuk", Email = "marcinkarpiesiuk@gmail.com", IsAdmin = True},
-                new User{Name = "Jan Paweł", Email = "jebandziecian@vatican.com"},
-                new User{Name = "Arnold Schwarzeneger", Email = "alekurwapompa@sila.com"},
-                new User{Name = "Narco Marco", Email = "elcowboyolacocaina@gmail.com" }
+                new User{Id = 1, Name = "Marcin Karpiesiuk", Email = "marcinkarpiesiuk@gmail.com"},
+                new User{Id = 2, Name = "Jan Paweł", Email = "jebandziecian@vatican.com"},
+                new User{Id = 3, Name = "Arnold Schwarzeneger", Email = "alekurwapompa@sila.com"},
+                new User{Id = 4, Name = "Narco Marco", Email = "elcowboyolacocaina@gmail.com" }
             };
 
             users.ForEach(u => context.Users.Add(u));
@@ -36,18 +37,24 @@ namespace DataAccessLayer.DAL
                 new TeamRank{Id = 10, Rank = "Five Stars", Value = 5.0}
             };
 
-            var team = new List<Team>
+            var teams = new List<Team>
             {
-                new Team{Name = "Real Madryt", RankID = 10},
-                new Team{Name = "Liverpool FC", RankID = 9},
-                new Team{Name = "Benfica", RankID = 8},
-                new Team{Name = "Legia Warszawa", RankID = 7},
-                new Team{Name = "Arsienał Tuła", RankID = 6},
-                new Team{Name = "Carpi", RankID = 5},
-                new Team{Name = "Shimizu", RankID = 4},
-                new Team{Name = "Dundalk", RankID = 3},
-                new Team{Name = "Cork City", RankID = 2},
-                new Team{Name = "Sogndal", RankID = 1}
+                new Team{Id = 1, Name = "Real Madryt", RankID = 10},
+                new Team{Id = 2, Name = "Liverpool FC", RankID = 9},
+                new Team{Id = 3, Name = "Benfica", RankID = 8},
+                new Team{Id = 4, Name = "Legia Warszawa", RankID = 7},
+                new Team{Id = 5, Name = "Arsienał Tuła", RankID = 6},
+                new Team{Id = 6, Name = "Carpi", RankID = 5},
+                new Team{Id = 7, Name = "Shimizu", RankID = 4},
+                new Team{Id = 8, Name = "Dundalk", RankID = 3},
+                new Team{Id = 9, Name = "Cork City", RankID = 2},
+                new Team{Id = 10, Name = "Sogndal", RankID = 1}
+            };
+
+            var matches = new List<Match>
+            {
+                new Match{Id = 1, Home = new Side{PlayerId = 1, TeamId = 1, Score = 3}, Away = new Side{PlayerId = 2, TeamId = 2, Score = 2} },
+                new Match{Id = 2, Home = new Side{PlayerId = 3, TeamId = 3, Score = 2}, Away = new Side{PlayerId = 4, TeamId = 4, Score = 3} } 
             };
         }
     }
