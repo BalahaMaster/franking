@@ -13,6 +13,7 @@ namespace DataAccessLayer.DAL
         {
             var users = new List<User>
             {
+                new User{Name = "Marcin Karpiesiuk", Email = "marcinkarpiesiuk@gmail.com", IsAdmin = True},
                 new User{Name = "Jan Paweł", Email = "jebandziecian@vatican.com"},
                 new User{Name = "Arnold Schwarzeneger", Email = "alekurwapompa@sila.com"},
                 new User{Name = "Narco Marco", Email = "elcowboyolacocaina@gmail.com" }
